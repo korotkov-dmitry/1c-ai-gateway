@@ -20,18 +20,20 @@
 ## 📂 Структура проекта
 ```text
 1c-ai-gateway/
-├── src/
-│   └── app/
-│       ├── main.py            # Точка входа FastAPI приложения
-│       ├── config.py          # Конфигурация Pydantic Settings
-│       ├── agent/
-│       │   └── executor.py    # Логика работы ИИ-агента (цикл ReAct)
-│       ├── api/
-│       │   └── routes.py      # Роуты API (/chat, /health)
-│       ├── client_1c/
-│       │   └── client.py      # Асинхронный клиент JSON-RPC к 1С MCP
-│       └── llm/
-│           └── client.py      # Сервис интеграции с Groq API
+|── 1c-client/
+|   |── src/
+|    
+├── app/
+│   ├── main.py            # Точка входа FastAPI приложения
+│   ├── config.py          # Конфигурация Pydantic Settings
+│   ├── agent/
+│   │   └── executor.py    # Логика работы ИИ-агента (цикл ReAct)
+│   ├── api/
+│   │   └── routes.py      # Роуты API (/chat, /health)
+│   ├── client_1c/
+│   │   └── client.py      # Асинхронный клиент JSON-RPC к 1С MCP
+│   └── llm/
+│       └── client.py      # Сервис интеграции с Groq API
 ├── tests/                     # Модульные и интеграционные тесты
 ├── pyproject.toml             # Центральный файл настроек проекта и зависимостей
 ├── .env.example               # Шаблон файла переменных окружения
