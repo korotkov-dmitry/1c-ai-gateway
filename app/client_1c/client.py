@@ -9,9 +9,9 @@ class OneCClient:
 
     def __init__(self):
         self.base_url = settings.ones_base_url
-        self.client = self._create_client()
+        self.client = self.create_ini()
 
-    def _create_client(self) -> httpx.AsyncClient:
+    def create_ini(self) -> httpx.AsyncClient:
         return httpx.AsyncClient(
             #auth=self.auth,
             timeout=30.0,
@@ -36,25 +36,25 @@ class OneCClient:
                        params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         url = f"{self.base_url}/mcp"
 
-        rpc_request = {
+        mpc_request = {
             "jsonrpc": "2.0",
             "id": 1,
             "method": method,
             "params": params or {}
         }
 
-        response = await self.client.post(url, json=rpc_request)
+        response = await self.client.post(url, json=mpc_request)
         response.raise_for_status()
 
-        rpc_response = response.json()
+        mpc_response = response.json()
 
         # Проверяем на ошибки JSON-RPC
-        if "error" in rpc_response:
-            error = rpc_response["error"]
+        if "error" in mpc_response:
+            error = mpc_response["error"]
             raise Exception(
             f"JSON-RPC ошибка {error.get('code', 'unknown')}: {error.get('message', 'Unknown error')}")
 
-        return rpc_response.get("result", {})
+        return mpc_response.get("result", {})
 
     async def tools_list(self):
         result = await self.call_mcp("tools/list")
