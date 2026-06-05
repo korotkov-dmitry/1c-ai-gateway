@@ -1,0 +1,43 @@
+[project]
+name = "1c-ai-gateway"
+version = "0.1.0"
+description = "Шлюз искусственного интеллекта для интеграции 1С и LLM моделей через MCP"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi>=0.110.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.14.1",
+    "httpx>=0.26.0",
+    "groq>=0.4.0",
+    "mcp>=0.1.0",       # Библиотека Model Context Protocol
+    "uvicorn>=0.28.0"   # ASGI-сервер для запуска FastAPI
+]
+
+[tool.pytest.ini_options]
+# Интеграция настроек pytest прямо в pyproject.toml
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.coverage.run]
+# Настройки для сбора покрытия тестами
+source = ["app"]
+omit = [
+    "app/config.py",
+#    "main.py",
+    "print_tree.py",
+    "test.py"
+]
+
+[tool.coverage.report]
+# Настройки вывода отчетов покрытия
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError"
+]

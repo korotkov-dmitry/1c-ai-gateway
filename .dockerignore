@@ -1,0 +1,12 @@
+.git
+.idea
+venv
+.venv
+__pycache__
+.pytest_cache
+.coverage
+htmlcov
+1c-client
+trash
+print_tree.py
+test.py
