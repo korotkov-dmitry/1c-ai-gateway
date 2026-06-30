@@ -9,11 +9,15 @@ class OneCClient:
 
     def __init__(self):
         self.base_url = settings.ones_base_url
+        self.auth = httpx.BasicAuth(
+            username=settings.ones_username,
+            password=settings.ones_password
+        )
         self.client = self.create_ini()
 
     def create_ini(self) -> httpx.AsyncClient:
         return httpx.AsyncClient(
-            #auth=self.auth,
+            auth=self.auth,
             timeout=30.0,
             headers={"Content-Type": "application/json"}
         )

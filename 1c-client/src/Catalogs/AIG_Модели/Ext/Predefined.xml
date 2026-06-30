@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="1a76c6fd-5836-4499-a00f-9cd4aeb040e0">
+		<Name>llama_3_1_8b_instant</Name>
+		<Code>000000001</Code>
+		<Description>llama-3.1-8b-instant</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7587366f-4dfd-4cf7-88ab-823d9a206867">
+		<Name>llama_3_3_70b_versatile</Name>
+		<Code>000000002</Code>
+		<Description>llama-3.3-70b-versatile</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

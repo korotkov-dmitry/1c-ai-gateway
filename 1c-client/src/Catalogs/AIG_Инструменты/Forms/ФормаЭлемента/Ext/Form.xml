@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="ДоступныеОбъекты" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДоступныеОбъекты</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДоступныеОбъектыКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ДоступныеОбъектыКоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="ДоступныеОбъектыЗаполнитьДоступныеОбъекты" id="38">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьДоступныеОбъекты</CommandName>
+						<ExtendedTooltip name="ДоступныеОбъектыЗаполнитьДоступныеОбъектыРасширеннаяПодсказка" id="39"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДоступныеОбъектыРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ДоступныеОбъектыСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ДоступныеОбъекты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеОбъектыСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДоступныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДоступныеОбъектыСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ДоступныеОбъекты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДоступныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДоступныеОбъектыУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ДоступныеОбъекты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеОбъектыУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ДоступныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДоступныеОбъектыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДоступныеОбъектыНомерСтроки" id="20">
+					<DataPath>Объект.ДоступныеОбъекты.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДоступныеОбъектыНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДоступныеОбъектыНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<CheckBoxField name="ДоступныеОбъектыДоступен" id="35">
+					<DataPath>Объект.ДоступныеОбъекты.Доступен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДоступныеОбъектыДоступенКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДоступныеОбъектыДоступенРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<ColumnGroup name="ДоступныеОбъектыОсновные" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступные объекты основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступные объекты основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДоступныеОбъектыОсновныеРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="ДоступныеОбъектыИмя" id="23">
+							<DataPath>Объект.ДоступныеОбъекты.Имя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДоступныеОбъектыИмяКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДоступныеОбъектыИмяРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="ДоступныеОбъектыСиноним" id="40">
+							<DataPath>Объект.ДоступныеОбъекты.Синоним</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДоступныеОбъектыСинонимКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДоступныеОбъектыСинонимРасширеннаяПодсказка" id="42"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ДоступныеОбъектыОписание" id="26">
+					<DataPath>Объект.ДоступныеОбъекты.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДоступныеОбъектыОписаниеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДоступныеОбъектыОписаниеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДоступныеОбъектыPurpose" id="29">
+					<DataPath>Объект.ДоступныеОбъекты.Purpose</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДоступныеОбъектыPurposeКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДоступныеОбъектыPurposeРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДоступныеОбъектыAnalytics" id="32">
+					<DataPath>Объект.ДоступныеОбъекты.Analytics</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДоступныеОбъектыAnalyticsКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДоступныеОбъектыAnalyticsРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.AIG_Инструменты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДоступныеОбъекты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить доступные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить доступные объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДоступныеОбъекты</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.AIG_Инструменты" id="d80800e0-f67d-45af-b03e-e34e2bd2d6b2" configVersion="4dea274d081f2b3b2bacce761affbc2240de3d11">
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Analytics" id="04b32f12-ec03-4726-bd23-9017bd5b4860"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Purpose" id="11199a2d-2a15-4d46-8bab-d864d32e58d7"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Имя" id="1c7487f0-a465-4354-bade-133b9dfc6dd4"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Описание" id="2f6abcf7-1f7c-400c-8b27-1e34505545fd"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Синоним" id="3893aea3-844e-4ab8-8e36-344771594df4"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты.Attribute.Доступен" id="7f7ea572-3fef-4596-b665-5ff3a9a40b6c"/>
+			<Metadata name="Catalog.AIG_Инструменты.TabularSection.ДоступныеОбъекты" id="fee15a45-3822-4758-91c2-54e15c4ab97f"/>
+		</Metadata>
+		<Metadata name="Catalog.AIG_Инструменты.Form.ФормаНастройкаИнструмента" id="cf6c05aa-2965-43be-93bd-c55de7e70bf1" configVersion="5f0e8344a4bd32c6ef8c454e818cdc8ea0e9a482"/>
+		<Metadata name="Catalog.AIG_Инструменты.Form.ФормаНастройкаИнструмента.Form" id="cf6c05aa-2965-43be-93bd-c55de7e70bf1.0" configVersion="be75e53478dea1b898042d1b2c504302c1a81035"/>
+		<Metadata name="Catalog.AIG_Инструменты.Form.ФормаЭлемента" id="8cae798e-ae96-4100-b0d3-50e5307d2de6" configVersion="e201c69f87ca4eb9fa8eb18fdc09c198e6f99dc7"/>
+		<Metadata name="Catalog.AIG_Инструменты.Form.ФормаЭлемента.Form" id="8cae798e-ae96-4100-b0d3-50e5307d2de6.0" configVersion="360adfdf80e270321f8b0ebde4f23d678e1cc4c5"/>
+		<Metadata name="Catalog.AIG_Инструменты.ObjectModule" id="d80800e0-f67d-45af-b03e-e34e2bd2d6b2.0" configVersion="fbfd0ee2645bd61c4820ca5f4aa99444378007f6"/>
+		<Metadata name="Catalog.AIG_Модели" id="d1a8b193-bc95-41dd-b356-1d8c6e356b7a" configVersion="b6a50d1010e0e9ea70411587bb9742af30df9952">
+			<Metadata name="Catalog.AIG_Модели.TabularSection.Инструменты.Attribute.Имя" id="13c84296-71f1-45f7-bb67-7dc42131b92d"/>
+			<Metadata name="Catalog.AIG_Модели.TabularSection.Инструменты.Attribute.Доступен" id="5821a3a4-993c-4340-bfd8-3251cfa68a69"/>
+			<Metadata name="Catalog.AIG_Модели.TabularSection.Инструменты" id="ba338efd-fc2f-4250-ab49-d417536c1e75"/>
+			<Metadata name="Catalog.AIG_Модели.TabularSection.Инструменты.Attribute.Инструмент" id="c1fdfde0-b60f-4e38-8299-3f129a62bf76"/>
+		</Metadata>
+		<Metadata name="Catalog.AIG_Модели.Form.ФормаЭлемента" id="2f8a0fd4-cf61-425f-8e00-eba881ff240d" configVersion="475ec19dc89e55ca4389321c1b6ddad15c6d67a3"/>
+		<Metadata name="Catalog.AIG_Модели.Form.ФормаЭлемента.Form" id="2f8a0fd4-cf61-425f-8e00-eba881ff240d.0" configVersion="484d3ff847d1a299651741249f6a111824ed8e3a"/>
+		<Metadata name="Catalog.AIG_Модели.Predefined" id="d1a8b193-bc95-41dd-b356-1d8c6e356b7a.1c" configVersion="914e874e8ca451c55af143eb2840abff9d9468c0"/>
+		<Metadata name="Catalog.AIG_Модели.Template.system_role" id="4f8ce1ff-7791-4677-83a4-a26ba1c5cf65" configVersion="31d77134c972e451e37462b78d87946eb2842a77"/>
+		<Metadata name="Catalog.AIG_Модели.Template.system_role.Template" id="4f8ce1ff-7791-4677-83a4-a26ba1c5cf65.0" configVersion="b8661fffb0f8a7ebcb239f2e17e4ad6f5ff4f820"/>
+		<Metadata name="Catalog.AIG_Чаты" id="4e164cd4-3bc3-46c4-a71d-fe095bddeed7" configVersion="7b544ef381481068e691389f1571ddfe327849cb">
+			<Metadata name="Catalog.AIG_Чаты.TabularSection.Сообщения" id="1e865b8b-b39a-4692-96da-609abf2a98e2"/>
+			<Metadata name="Catalog.AIG_Чаты.Attribute.Ответ" id="2437efad-c012-458d-9d9b-8115a83329c1"/>
+			<Metadata name="Catalog.AIG_Чаты.Attribute.ДатаСоздания" id="3c9af3bb-6e7b-4146-be8b-6e64a677a5c6"/>
+			<Metadata name="Catalog.AIG_Чаты.Attribute.ЧатID" id="421060fc-c2e0-4952-a0e3-916a5a8b76c3"/>
+			<Metadata name="Catalog.AIG_Чаты.Attribute.Пользователь" id="8315d1a4-39db-4cf4-8de9-adf5cff21753"/>
+			<Metadata name="Catalog.AIG_Чаты.TabularSection.Сообщения.Attribute.ДатаСоздания" id="9558a27c-d18e-44ce-a878-a8568089aa1f"/>
+			<Metadata name="Catalog.AIG_Чаты.Attribute.Успешно" id="a64359b2-0e86-4944-82f9-e161b3879678"/>
+			<Metadata name="Catalog.AIG_Чаты.TabularSection.Сообщения.Attribute.Сообщение" id="b9280f9c-c123-42ad-8ea6-1baaf5c2d3d5"/>
+			<Metadata name="Catalog.AIG_Чаты.TabularSection.Сообщения.Attribute.ТипСообщения" id="bb94bdcb-d4db-4162-a2f0-f258a2a386a9"/>
+		</Metadata>
+		<Metadata name="Catalog.AIG_Чаты.Form.ФормаЭлемента" id="5f90a603-4bae-4cd2-bbf1-2e1c2290b563" configVersion="80a303578c13d8a8f04d41bc9aa5e2902934ba15"/>
+		<Metadata name="Catalog.AIG_Чаты.Form.ФормаЭлемента.Form" id="5f90a603-4bae-4cd2-bbf1-2e1c2290b563.0" configVersion="e8cbb7ed52cbeb0e03b310d23a34a08950753370"/>
+		<Metadata name="Catalog.AIG_Чаты.ObjectModule" id="4e164cd4-3bc3-46c4-a71d-fe095bddeed7.0" configVersion="ed95975a4c438016ed998f788c7cb18f6e46c24d"/>
+		<Metadata name="CommonModule.AIG_APIСервер" id="a4c41c18-484c-4bb7-b60a-b5e8b999d14a" configVersion="702ddb07b91831375f3b7cb33d89d1edb20e9326"/>
+		<Metadata name="CommonModule.AIG_APIСервер.Module" id="a4c41c18-484c-4bb7-b60a-b5e8b999d14a.0" configVersion="55615ffa8ed9f146ff96f9c8b3ecbe75930a554a"/>
+		<Metadata name="CommonModule.AIG_Инструменты" id="de7e609e-ee89-49e8-83d9-0753ef420f2f" configVersion="f7f0dbbbea1ecac3ccf060ffc64065527ecaf4c9"/>
+		<Metadata name="CommonModule.AIG_Инструменты.Module" id="de7e609e-ee89-49e8-83d9-0753ef420f2f.0" configVersion="9b13572de48e1745f72be8fb2d16cf26811cb9f2"/>
+		<Metadata name="CommonModule.AIG_ИнструментыПовтИсп" id="f3d3f009-b285-4a76-a548-e2f0fddf389a" configVersion="06d645b21a5490e2db4132b8f63e45e8086587ce"/>
+		<Metadata name="CommonModule.AIG_ИнструментыПовтИсп.Module" id="f3d3f009-b285-4a76-a548-e2f0fddf389a.0" configVersion="90b754b081d4d9388a4ab25c285bb6457234f9cc"/>
+		<Metadata name="CommonModule.AIG_ОбщегоНазначения" id="99547318-84ec-4b10-9bbc-6a4433a9da92" configVersion="77ba8f7116706d0cfc3890b9690119141a0b37fe"/>
+		<Metadata name="CommonModule.AIG_ОбщегоНазначения.Module" id="99547318-84ec-4b10-9bbc-6a4433a9da92.0" configVersion="ab8823d08711d6736a1d1a38cfeafc381a854779"/>
+		<Metadata name="CommonModule.AIG_ОбщегоНазначенияКлиент" id="984743f2-cfb2-4cc4-98cb-a1f635043e69" configVersion="13c265a30ee69b6b289085e315f1fa29dc6212d3"/>
+		<Metadata name="CommonModule.AIG_ОбщегоНазначенияКлиент.Module" id="984743f2-cfb2-4cc4-98cb-a1f635043e69.0" configVersion="19392992a7725ebb491e8f8cdbf012bb233f64ad"/>
+		<Metadata name="CommonModule.AIG_Ресурсы" id="5e2dbf53-bd36-42b6-83ba-6edf1a98fb32" configVersion="343029e88487746cc5606db1c311a5cb78ba58e6"/>
+		<Metadata name="CommonModule.AIG_Ресурсы.Module" id="5e2dbf53-bd36-42b6-83ba-6edf1a98fb32.0" configVersion="b59c55631aee4ad7400e0543b2c10d5fe3cd0f95"/>
+		<Metadata name="CommonModule.AIG_РесурсыПовтИсп" id="23501646-019a-4395-8932-4c9a96db082f" configVersion="e141f9b47eeb874f8c95cbf7a878706bc978680b"/>
+		<Metadata name="CommonModule.AIG_РесурсыПовтИсп.Module" id="23501646-019a-4395-8932-4c9a96db082f.0" configVersion="7ff2b71ca03ddadec219231609b12fba23569607"/>
+		<Metadata name="CommonModule.AIG_Содержимое" id="c77d17b6-2806-4b79-81b4-22f64a23b751" configVersion="79ce74172fe2f16f913acd47a0ca532cd0d12fd7"/>
+		<Metadata name="CommonModule.AIG_Содержимое.Module" id="c77d17b6-2806-4b79-81b4-22f64a23b751.0" configVersion="fda862039a72d58394e5ac4a40e0d3acf4b1d8ed"/>
+		<Metadata name="Configuration.AIGateway" id="f6b5bfa5-25e7-4a84-8e2f-7518c7c95f10" configVersion="e8e17f83a07b2bf33cabecc89afb756264c8e604"/>
+		<Metadata name="Constant.AIG_АдресСервераGatewayAPI" id="a8a2ee46-f03d-4c8a-ac8a-c2a29bee5f23" configVersion="0482b99159e6db219c9e78f03236ee27da8023c9"/>
+		<Metadata name="Constant.AIG_ОсновнаяМодель" id="eb41b5d5-8855-4271-923f-22d2dd6fdd5d" configVersion="598d855b0d54d9e1b98e724a43d144b2f86bdfa4"/>
+		<Metadata name="Constant.AIG_ПередаватьКонтекстЧата" id="a4d90e01-fc63-4931-8be8-efe048304a8e" configVersion="29a884aa611e00f28c04467a22a7e177ab547e40"/>
+		<Metadata name="Constant.AIG_СистемнаяРоль" id="df37dbdf-0dba-411d-8e35-431e322e9470" configVersion="0b81a1b85953ebe37571c7f822414a93091108e7"/>
+		<Metadata name="DataProcessor.AIG_Администрирование" id="af216c13-363b-4d5e-b844-9f2386669445" configVersion="c5435d1785c47e3c0a523794c434d9ca276e7c2e"/>
+		<Metadata name="DataProcessor.AIG_Администрирование.Form.Форма" id="c0dbf0ca-3260-4696-b327-56ca45d69fbf" configVersion="55302175469241c077f8f8b9b9ac877ae1a95a7a"/>
+		<Metadata name="DataProcessor.AIG_Администрирование.Form.Форма.Form" id="c0dbf0ca-3260-4696-b327-56ca45d69fbf.0" configVersion="bf6b7a9230bee119141683284f5804cd665eeeec"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_Запрос" id="4a035897-6df8-4a9e-9af2-cd3d03569516" configVersion="08dc83771bbdf8d00c251ffab984f1624967afc0"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_Запрос.ManagerModule" id="4a035897-6df8-4a9e-9af2-cd3d03569516.2" configVersion="dfe82fcd6e963078a70d8a3f93ccd4a65b62b2f5"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_ИнформацияОКонфигурации" id="d11c7590-813a-46f7-b3c1-e29d0c421aa4" configVersion="0853f4a1d0480e11792465cf01d7163f94878216"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_ИнформацияОКонфигурации.ManagerModule" id="d11c7590-813a-46f7-b3c1-e29d0c421aa4.2" configVersion="8523e8c791609719d9749e8d84f82bb930c5809c"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_ИсточникДанных" id="41b25000-347b-44da-9ba0-8158e2ddc263" configVersion="79ff2218cc2092649378fd6bf3f675387de4ba4d"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_ИсточникДанных.ManagerModule" id="41b25000-347b-44da-9ba0-8158e2ddc263.2" configVersion="fd44798435f77147f36ec57c8d128855bc18e11b"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_Отчеты" id="6afc23c5-efcf-45fe-8231-e8740b158471" configVersion="8847abcee4976e3de3ec9c228661318902b5e293"/>
+		<Metadata name="DataProcessor.AIG_Инструмент_Отчеты.ManagerModule" id="6afc23c5-efcf-45fe-8231-e8740b158471.2" configVersion="cc9c8636985ca1899863bf6e63604809e366f13c"/>
+		<Metadata name="DataProcessor.AIG_Ресурс_СинтаксисВстроенногоЯзыка" id="bce00548-20ca-410e-927b-1e3a3a42c286" configVersion="a94c0119636bfa6c9b0285d5be2d275717a44c3e"/>
+		<Metadata name="DataProcessor.AIG_Ресурс_СинтаксисВстроенногоЯзыка.ManagerModule" id="bce00548-20ca-410e-927b-1e3a3a42c286.2" configVersion="4ae5504da5283cda7bb9a6320bcac34c046c50b8"/>
+		<Metadata name="DataProcessor.AIG_Ресурс_СинтаксисВстроенногоЯзыка.Template.syntax_1c" id="3d7e27be-bfc9-4641-aa31-bac6adfb6b91" configVersion="8385021e2c470a5ade0d1fe4059cb8c04b172151"/>
+		<Metadata name="DataProcessor.AIG_Ресурс_СинтаксисВстроенногоЯзыка.Template.syntax_1c.Template" id="3d7e27be-bfc9-4641-aa31-bac6adfb6b91.0" configVersion="a4fdbc85dc171d8acccb91939d72f5d21511489f"/>
+		<Metadata name="Enum.AIG_ТипыСообщений" id="45082fae-f711-4705-bacb-4520a9f86f4d" configVersion="76ef2dcd08c3166ef88b60610ef271b7426d88b6">
+			<Metadata name="Enum.AIG_ТипыСообщений.EnumValue.Assistant" id="1fed0d69-7f65-4d9b-8bca-75fa8b9d54e8"/>
+			<Metadata name="Enum.AIG_ТипыСообщений.EnumValue.Other" id="72e7779b-d26e-4e04-806b-6caac3aaef60"/>
+			<Metadata name="Enum.AIG_ТипыСообщений.EnumValue.User" id="9e1400d3-294a-449d-a588-d0c3b6f0ac71"/>
+			<Metadata name="Enum.AIG_ТипыСообщений.EnumValue.System" id="a69fa230-a486-4d39-a2d6-d04c3c9c242f"/>
+			<Metadata name="Enum.AIG_ТипыСообщений.EnumValue.Tool" id="e6d19754-b881-41dd-b6d2-1647eb15ee55"/>
+		</Metadata>
+		<Metadata name="HTTPService.AIG_AIGateway" id="a574f7cc-7eca-48e7-8377-6dc67f166365" configVersion="beff28ea6cd433ea17b12747d762b40b819f6608">
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.health" id="106eeeff-3748-4368-8850-70233b3b067e"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.rpc.Method.POST" id="88331beb-c30c-4c96-b696-8f5a434b69a8"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.mcp.Method.GET" id="9b7a58ea-1fc2-4f48-9d5a-93c83e22d9a6"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.mcp.Method.POST" id="c44ae99c-a405-4832-b942-16fcc9436ecb"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.rpc" id="d02a1928-c24e-4e76-8aaf-6db631238eb5"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.mcp" id="d2178eb3-34d7-4621-a7c7-a6a1abb7172e"/>
+			<Metadata name="HTTPService.AIG_AIGateway.URLTemplate.health.Method.GET" id="e9b67b05-4fae-4f38-844c-b87d378f6dcd"/>
+		</Metadata>
+		<Metadata name="HTTPService.AIG_AIGateway.Module" id="a574f7cc-7eca-48e7-8377-6dc67f166365.0" configVersion="61523de958d27ed91d84e5620f113a90152c42b3"/>
+		<Metadata name="Language.Русский" id="9bb5e39f-add6-4088-90c8-b99552cd4910" configVersion="f3261a75f102f080a24430cf2ea91d60939d9de0"/>
+		<Metadata name="Role.AIG_ОсновнаяРоль" id="ac8fabde-d2ba-4eea-8615-952e1aad45df" configVersion="8b0ac44c406d4e1f624f63f8b9a34d16b46d9e31"/>
+		<Metadata name="Subsystem.AIG_AIGateway" id="a1ceb6c1-596c-4bdb-9e5d-62ace9d4303a" configVersion="a6bd350573eaae224d10e0e4ad119bf2c51148f9"/>
+		<Metadata name="Subsystem.AIG_AIGateway.Subsystem.AIG_Инструменты" id="b82dc179-1697-4e11-beb5-b6926ad63eff" configVersion="6e8c283e82ba71bb00e9192e5183e2495cb8279f"/>
+		<Metadata name="Subsystem.AIG_AIGateway.Subsystem.AIG_Ресурсы" id="506b4244-3f5c-4a16-b532-3833bc9967d8" configVersion="a9460b332c45e046c347b76cdc069394c5dc2a0f"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсн" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Группа осн</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Группа осн</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОснРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОснЛев" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Группа осн лев</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Группа осн лев</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОснЛевРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРеквизиты" id="38">
+							<Title>
+								<v8:item>
+									<v8:lang>ru1</v8:lang>
+									<v8:content>Группа реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru1</v8:lang>
+									<v8:content>Группа реквизиты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СпроситьAI" id="42">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СпроситьAI</CommandName>
+							<ExtendedTooltip name="СпроситьAIРасширеннаяПодсказка" id="43"/>
+						</Button>
+						<InputField name="Ответ" id="44">
+							<DataPath>Объект.Ответ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтветКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ОтветРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОснПрав" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Группа осн прав</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Группа осн прав</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОснПравРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<Table name="Сообщения" id="13">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Сообщения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СообщенияКонтекстноеМеню" id="14"/>
+							<AutoCommandBar name="СообщенияКоманднаяПанель" id="15">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СообщенияРасширеннаяПодсказка" id="16"/>
+							<SearchStringAddition name="СообщенияСтрокаПоиска" id="17">
+								<AdditionSource>
+									<Item>Сообщения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияСтрокаПоискаКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="СообщенияСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СообщенияСостояниеПросмотра" id="20">
+								<AdditionSource>
+									<Item>Сообщения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияСостояниеПросмотраКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="СообщенияСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СообщенияУправлениеПоиском" id="23">
+								<AdditionSource>
+									<Item>Сообщения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияУправлениеПоискомКонтекстноеМеню" id="24"/>
+								<ExtendedTooltip name="СообщенияУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СообщенияВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СообщенияНомерСтроки" id="26">
+									<DataPath>Объект.Сообщения.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияНомерСтрокиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СообщенияНомерСтрокиРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+								<InputField name="СообщенияДатаСоздания" id="29">
+									<DataPath>Объект.Сообщения.ДатаСоздания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СообщенияДатаСозданияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СообщенияДатаСозданияРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="СообщенияТипСообщения" id="32">
+									<DataPath>Объект.Сообщения.ТипСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СообщенияТипСообщенияКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СообщенияТипСообщенияРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="СообщенияСообщение" id="35">
+									<DataPath>Объект.Сообщения.Сообщение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СообщенияСообщениеКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СообщенияСообщениеРасширеннаяПодсказка" id="37"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ЧатID" id="53">
+			<DataPath>Объект.ЧатID</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЧатIDКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ЧатIDРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<UsualGroup name="ГруппаСоздание" id="40">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Группа создание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Группа создание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСозданиеРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Пользователь" id="7">
+					<DataPath>Объект.Пользователь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаСоздания" id="10">
+					<DataPath>Объект.ДатаСоздания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.AIG_Чаты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СпроситьAI" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Спросить AI</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Спросить AI</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СпроситьAI</Action>
+		</Command>
+	</Commands>
+</Form>

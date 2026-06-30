@@ -1,13 +1,16 @@
+from http.client import responses
+
 from groq import Groq
 from app.config import settings
 
-def ask_llm(messages: list, tools=None):
+def ask_llm(messages: list, model=None, tools=None):
     client = Groq(
         api_key=settings.groq_api_key,
     )
 
-    model = "llama-3.1-8b-instant"
-    #model_v = "llama-3.3-70b-versatile"  # основная
+    if model is None:
+        # model = "llama-3.1-8b-instant"
+        model = "llama-3.3-70b-versatile"  # основная
 
     response = client.chat.completions.create(
         messages=messages,

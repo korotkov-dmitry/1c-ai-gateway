@@ -5,48 +5,38 @@ from app.client_1c.client import OneCClient
 
 OneCClient = OneCClient()
 
-async def run_agent(message: str):
+async def run_agent(message: str,
+                    system_role: str,
+                    model: str=None,
+                    message_content: str=None):
 
     tools_list = await OneCClient.tools_list()
     messages = [
         {
             "role": "system",
-            "content": """ 
-                Ты помощник 1С.
-                
-                Алгоритм работы:
-                1. Если нужны данные из базы:
-                1.1 Получение списка отчетов "list_reports".
-                1.2. Найди подходящий по описанию.
-                1.3. Если не находишь подходящий, другие инструменты не вызываешь.
-                1.4. Если найден подходящий - для выполнения вызываешь run_report.
-                1.5. Результат выполнения возвращается в виде таблицы.
-                
-                2. Если нужны данные о структуре базы:
-                2.1 Сначала вызови list_metadata_objects
-                2.2 Используй только объекты из результата list_metadata_objects
-                3.2 Описание объекта только из результата get_metadata_structure
-                3.4 Если вернулась ошибка - не продолжай
-                
-                3. Никогда не придумывай метаданные
-                4. Если вернулась ошибка - не продолжай
-            """
-        },
-        {
-            "role": "user",
-            "content": message,
+            "content": system_role
         }
     ]
 
+    messages.extend(message_content)
+
+    messages.append({
+        "role": "user",
+        "content": message,
+    })
+
     while True:
 
-        completions = ask_llm(messages, tools_list)
+        completions = ask_llm(messages,
+                              model,
+                              tools_list)
         choice = completions.choices[0]
 
         if choice.finish_reason != "tool_calls":
             answer = {
                 "content": choice.message.content,
-                "messages": messages
+                "messages": messages,
+                "id": completions.id
             }
             return answer
 
